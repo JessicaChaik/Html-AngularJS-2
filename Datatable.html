@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic UI</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js">
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.2/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link async rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@${props.versions.sui}/dist/semantic.min.css"/>
+    <script async src="//cdn.jsdelivr.net/npm/semantic-ui@${props.versions.sui}/dist/semantic.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/JavaScript1.js"></script>
+    <style>
+        .vl {
+        border-left: 3px solid #2F4579;
+        height: 40px;
+        left : 40px;
+        }
+        .column {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        }
+        select.ui.dropdown {
+        width: 280px;
+        margin-left : 8px;
+        }
+        .ui.input>input {
+        width: 265px;
+        }
+        .ui.vertical.tabular.menu .item {
+        color: white;
+        }
+        .ui.vertical.tabular.menu .active.item {
+        background: #ECF3FD;
+        }
+        .ui.column.grid>[class*="twelve wide"].column, .ui.grid>.column.row>[class*="twelve wide"].column, .ui.grid>.row>[class*="twelve wide"].column, .ui.grid>[class*="twelve wide"].column {
+        width: 90%!important;
+        }
+        .ui.grid>.row>.stretched.column, .ui.grid>.stretched.column:not(.row), .ui.grid>.stretched.row>.column, .ui.stretched.grid>.column, .ui.stretched.grid>.row>.column {
+        background-color: #ECF3FD;
+        }
+</style>
+</head>
+  <body>
+   <div class="continer">
+    <div class="ui relaxed grid">
+        <div class="two column row">
+
+          <div class="column">
+                <div class="row">
+                        <div class="column" style=" width :200px; height :80px;">
+                            <img src="Logo.png" width="200" height ="80" alt="Logo"> 
+                        </div>
+                        <div class="column" style=" width :10px; padding-top : 25px; justify-content: left;">
+                            <div class="vl" ></div>
+                        </div>
+                        <div class="column" style=" width :80px; padding-top : 35px; justify-content: left;">
+                            <h5 class="text-left">Profiler</h5>
+                        </div>
+                </div>
+          </div>
+               
+          <div class="column" style=" padding-top : 30px;">
+                <div class="row" style="left : 300px;">
+                    <div class="column" style="width : 580px;"></div>
+                    <div class="column">
+                        <span style="float:right; font-size :25px;"><i class="fa fa-user"></i> </span>
+                    </div>
+                    <div class="column" style ="width : 100px; ">
+                        <h5 class="text-left">Ester Low</h5>   
+                    </div>
+                    <div class="column" style="width : 25px;">
+                         <i class="fa fa-sign-in" style="font-size :25px;"></i>
+                    </div>
+                </div>
+          </div>
+
+          </div>
+        </div>
+
+<div class="contianer">
+        <div class="continer">
+        <div class="ui grid">
+                <div class="three column" style="background-color : #002060; color :white; padding-right : 0px;">
+                        <div class="ui vertical fluid tabular menu">
+                                <a class="active item">Projects</a>
+                                <a class="item">Analytics</a>
+                        </div>
+                </div>
+                <div class="twelve wide stretched column">
+                <div class="ui grib">
+                        <div class="row" >
+                                <div class="column" style=" width :150px; height :20px;">
+                                        <h1 class="text-left">PROJECTS</h1>
+                                </div>
+                                <div class="column" style=" width :30px; height :20px;">
+                                        <div class="vl" ></div>
+                                </div>
+                                <div class="column" style=" width :800px; padding-top :18px;">
+                                        <h3 class="text-left" >Project List</h3>
+                                </div>
+                        </div> <!--end first row-->
+                </div>
+                <div class="twelve wide stretched column">       
+                        <div class="row" >
+                                <button class="ui button" style="background-color: #2F4579; color : white;">Create Project</button>             
+                        </div>
+                </div>
+                <div class="ui relaxed grid">
+                        <div class="three column row" style="padding-bottom : 0px;">
+                          <div class="column">
+                                <label for="pro-name">Project Name </label>
+                                <select class="ui dropdown">
+                                        <option value=""></option>
+                                        <option value="1">Ent-Vision Maritime</option>
+                                        <option value="2">Ent-Vision Supply Chain Logistics</option>
+                                        <option value="3">Ent-Vision MICE</option>
+                                </select>
+                          </div>
+                          <div class="column">
+                                <label for="pro-name" style="text-align: left; justify-content: left; padding-right : 15px;">Client Name </label>
+                                <select class="ui dropdown">
+                                        <option value=""></option>
+                                        <option value="1">Ent-Vision</option>
+                                        <option value="2">Ent-Vision</option>
+                                        <option value="2">Ent-Vision</option>
+                                </select>
+                          </div>
+                          <div class="column">
+                                <button class="ui button" style="background-color: #2F4579; color : white;">Search</button>  
+                          </div>
+                        </div>
+                </div> <!-- end of first input row-->
+                <div class="ui relaxed grid">
+                        <div class="three column row" style="padding-top : 0px; padding-bottom : 0px;">
+                          <div class="column">
+                            <label for="pro-name" style="text-align: left; justify-content: left; padding-right : 22px;">Project Id </label>
+                                <select class="ui dropdown">
+                                        <option value=""></option>
+                                        <option value="1">EN20201007</option>
+                                        <option value="2">EN20200910</option>
+                                        <option value="2">EN20200510</option>
+                                </select>
+                          </div>
+                          <div class="column">
+                              <div class="row">
+                                <div class="column" style="width : 130px; padding-left : 0px; padding-right : 0px;">
+                                        <label for="pro-name">Project Period </label>
+                                </div>
+                                <div class="column" style="width : 120px; padding : 0px 0px;">
+                                        <div class="ui calendar" id="example1">
+                                        <div class="ui input left icon">
+                                        <i class="calendar icon"></i>
+                                        <input type="text" placeholder="Date/Time">
+                                        </div>
+                                        </div>
+                                </div>
+                               </div>
+                          </div>
+                          <div class="column"></div>
+                        </div>
+                </div> <!-- end of second input row-->          
+                <div class="ui relaxed grid">
+                        <div class="three column row" style="padding-top : 0px;">
+                          <div class="column">
+                                <label for="pro-name" style="text-align: left; justify-content: left; padding-right : 35px;">Service </label>
+                                <select class="ui dropdown">
+                                        <option value=""></option>
+                                        <option value="1">Contact Acquisition</option>
+                                        <option value="2">Contact Acquisition</option>
+                                        <option value="3">Contact Acquisition</option>
+                                </select>
+                          </div>
+                          <div class="column">
+                                <label for="pro-name" style="text-align: left; justify-content: left; padding-right : 15px;">Client Name </label>
+                                <select class="ui dropdown">
+                                        <option value=""></option>
+                                        <option value="1">Ent-Vision</option>
+                                        <option value="2">Ent-Vision</option>
+                                        <option value="3">Ent-Vision</option>
+                                </select>
+                          </div>
+                          <div class="column"></div>
+                        </div>
+                </div> <!-- end of thirst input row-->
+                <table id="example" class="ui celled table" style="width:80%">
+                        <thead>
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Project ID </th>
+                                <th>Service</th>
+                                <th>Client Name</th>
+                                <th>Project Period</th>
+                                <th>Project Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ent-Vision Maritime</td>                               
+                                <td>EN20201007</td>
+                                <td>Contact Acquisition</td>
+                                <td>Ent-Vision</td>
+                                <td>1  Oct 2020 - 10 Oct 2020</td>
+                                <td>Active</td>
+                                <td style="text-align: center;"><button class="ui button" style="background-color: #2F4579; color : white; ">Manage</button> </td>
+                            </tr>
+                            <tr>
+                                <td>Ent-Vision Supply Chain Logistics</td>
+                                <td>EN20200910</td>
+                                <td>Contact Acquisition</td>
+                                <td>Ent-Vision</td>
+                                <td>10 Sep 2020 - 20 Sep 2020</td>
+                                <td>Active</td>
+                                <td style="text-align: center;"><button class="ui button" style="background-color: #2F4579; color : white; ">Manage</button> </td>
+                            </tr>
+                            <tr>
+                                <td>Ent-Vision MICE</td>
+                                <td>EN20200510</td>
+                                <td>Contact Acquisition</td>
+                                <td>Ent-Vision</td>
+                                <td>20 May 2020- 30 May2020</td>
+                                <td>Active</td>
+                                <td style="text-align: center;"><button class="ui button" style="background-color: #2F4579; color : white; ">Manage</button> </td>
+                            </tr>
+                    </table>
+        </div> <!-- end of ui grib -->
+</div>
+        <script>
+                $('.ui.calendar').calendar({
+                onChange: function (date, text) {
+                        var newValue = text;
+                        alert(newValue);},
+                });
+        </script>
+  </body>
+</html> 
